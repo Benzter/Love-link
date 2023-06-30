@@ -1,6 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/aspnetcore,angular,dotnetcore
 # Edit at https://www.toptal.com/developers/gitignore?templates=aspnetcore,angular,dotnetcore
-
+.vscode
 ### Angular ###
 ## Angular ##
 # compiled output
