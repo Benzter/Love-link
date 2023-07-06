@@ -310,3 +310,6 @@ obj/
 /wwwroot/node_modules
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,angular,dotnetcore
+
+#Database
+*.db
