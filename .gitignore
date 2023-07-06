@@ -313,3 +313,6 @@ obj/
 
 #Database
 *.db
+
+#other files
+API/appsettings.json
