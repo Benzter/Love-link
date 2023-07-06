@@ -1,3 +1,48 @@
+#new added 
+#Database
+*.db
+
+#other files
+API/appsettings.json
+
+############################
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# dependencies
+node_modules/
+bower_components/
+
+# IDEs and editors
+.idea/
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+.angular/
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
+
+# End of https://www.toptal.com/developers/gitignore/api/angular
+
+
+############################
+##.net files ##
 # Created by https://www.toptal.com/developers/gitignore/api/aspnetcore,angular,dotnetcore
 # Edit at https://www.toptal.com/developers/gitignore?templates=aspnetcore,angular,dotnetcore
 .vscode
@@ -311,8 +356,3 @@ obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,angular,dotnetcore
 
-#Database
-*.db
-
-#other files
-API/appsettings.json
