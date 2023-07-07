@@ -356,3 +356,5 @@ obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,angular,dotnetcore
 
+API/datingapp.db-wal
+API/datingapp.db-shm
