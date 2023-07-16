@@ -2,7 +2,10 @@
   <div class="container">
     <a class="navbar-brand" href="#">Lovelink</a>
 
-    <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="loggedIn">
+    <ul
+      class="navbar-nav me-auto mb-2 mb-md-0"
+      *ngIf="accountService.currentUser$ | async"
+    >
       <li class="nav-item">
         <a class="nav-link" href="#">Matches</a>
       </li>
@@ -17,7 +20,7 @@
       </li>
     </ul>
 
-    <div class="dropdown" *ngIf="loggedIn" dropdown>
+    <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>
       <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle
         >Welcome user</a
       >
@@ -32,7 +35,7 @@
       class="d-flex"
       (ngSubmit)="login()"
       autocomplete="on"
-      *ngIf="!loggedIn"
+      *ngIf="!(accountService.currentUser$ | async)"
     >
       <input
         name="username"
