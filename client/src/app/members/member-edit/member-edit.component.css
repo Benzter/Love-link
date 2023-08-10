@@ -21,7 +21,7 @@ textarea , input {
 textarea:focus , input:focus {
     background-color: white;
     color: black;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px black;
 }
 
 .nav-link{
