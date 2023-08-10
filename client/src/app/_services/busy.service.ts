@@ -13,8 +13,8 @@ export class BusyService {
     this.busyRequestCount++;
     this.spinnerService.show(undefined, {
       type: "line-scale-party",
-      bdColor: "rgba(255,255,255,0)",
-      color: "#333333"
+      bdColor: "rgba(255,255,255,0.3)",
+      color: "#fff"
     })
   }
 
