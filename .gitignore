@@ -360,3 +360,5 @@ API/datingapp.db-wal
 API/datingapp.db-shm
 client/ssl/server.crt
 client/ssl/server.key
+client/ssl/localhost-key.pem
+client/ssl/localhost.pem
