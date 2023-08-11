@@ -358,6 +358,7 @@ obj/
 
 API/datingapp.db-wal
 API/datingapp.db-shm
+API/appsettings.json
 client/ssl/server.crt
 client/ssl/server.key
 client/ssl/localhost-key.pem
