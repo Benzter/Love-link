@@ -61,6 +61,13 @@
     [label]="'Confirm Password'"
     [type]="'password'"
   ></app-text-input>
+
+  <div class="row" *ngIf="validationErrors">
+    <ul class="text-danger">
+      <li *ngFor="let error of validationErrors">{{ error }}</li>
+    </ul>
+  </div>
+
   <div class="text-center">
     <button class="btn btn-success me-2" type="submit">Register</button>
     <button class="btn btn-success-outline" type="button" (click)="cancel()">
