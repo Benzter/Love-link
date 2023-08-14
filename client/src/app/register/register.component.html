@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm" (ngSubmit)="register()">
+<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()">
   <h2 class="text-center text-primary">Sign up</h2>
   <hr />
 
@@ -69,12 +69,15 @@
   </div>
 
   <div class="text-center">
-    <button class="btn btn-success me-2" type="submit">Register</button>
+    <button
+      class="btn btn-success me-2"
+      type="submit"
+      [disabled]="!registerForm.valid"
+    >
+      Register
+    </button>
     <button class="btn btn-success-outline" type="button" (click)="cancel()">
       Cancel
     </button>
   </div>
 </form>
-
-<p>Form value: {{ registerForm.value | json }}</p>
-<p>Form value: {{ registerForm.status | json }}</p>
