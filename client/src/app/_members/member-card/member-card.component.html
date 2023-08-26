@@ -21,7 +21,11 @@
       </li>
       <li class="list-inline-item">
         <button class="btn btn-primary py-1 px-2">
-          <i class="fa fa-envelope"></i>
+          <i
+            class="fa fa-envelope"
+            routerLink="/members/{{ member.userName }}"
+            [queryParams]="{ tab: 'Messages' }"
+          ></i>
         </button>
       </li>
     </ul>
