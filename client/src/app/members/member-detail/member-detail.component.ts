@@ -44,6 +44,12 @@ onTabActivate(data: TabDirective){
   }
 }
 
+selectTab(heading: String) {
+  if (this.memberService) {
+    this.memberTabs!.tabs.find(x => x.heading === heading)!.active = true;
+  }
+}
+
 loadMessages() {
   if(this.member) {
     this.messageServices.getMessageThread(this.member.userName).subscribe({
