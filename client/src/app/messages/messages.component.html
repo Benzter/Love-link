@@ -50,6 +50,7 @@
             : '/members/' + message.senderUsername
         }}"
         [queryParams]="{ tab: 'Messages' }"
+        [hidden]="loading"
       >
         <td>{{ message.content }}</td>
         <td>
@@ -81,7 +82,7 @@
 
 <div
   class="d-flex justify-content-center"
-  *ngIf="pagination && messages && messages.length > 0"
+  *ngIf="!loading && pagination && messages && messages.length > 0"
 >
   <pagination
     [boundaryLinks]="true"
