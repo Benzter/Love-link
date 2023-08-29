@@ -5,9 +5,9 @@
 ## Technologies Used
 ### This app was built using the following technologies:
 
-ASP.NET: for the server-side REST API
-Angular: for the user interface and client-side rendering
-SQLite: for the database.
+- ASP.NET: for the server-side REST API
+- Angular: for the user interface and client-side rendering
+- QLite: for the database.
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
